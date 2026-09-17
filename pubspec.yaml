@@ -1,0 +1,57 @@
+name: mobile_mict
+description: "MCIT Tanzania official mobile application."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.11.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.3
+  url_launcher: ^6.3.1
+  flutter_local_notifications: ^17.2.2
+  visibility_detector: 0.4.0+2
+  dio: ^5.4.0
+  gal: ^2.2.1 # Inasaidia picha na video kuonekana kwenye gallery/Google Files moja kwa moja
+  path_provider: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo/emblem.png
+    - assets/logo/emblem_fore.png
+    - assets/logo/ict_commission_logo.png
+    - assets/logo/pdpc_logo.png
+    - assets/logo/posta_logo.png
+    - assets/logo/tcra_logo.png
+    - assets/logo/TCRA_CCC_logo.png
+    - assets/logo/ttcl_logo.png
+    - assets/logo/UCSAF_logo.png
+    - assets/logo/tanzanialogo_white.png
+
+    - assets/icons/tanzanialogo.png
+
+    - assets/images/deputy_minister.png
+    - assets/images/permanent_secretary.png
+    - assets/images/minister.png
+    - assets/images/landing_image.png
+    - assets/components/footer_image.png
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icons/tanzanialogo.png
+  min_sdk_android: 21
